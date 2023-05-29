@@ -1,0 +1,13 @@
+input[type=text] {
+    background-color: #fefefe;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.btn-todo {
+    height: 60px!important;
+    background-color: #e9eeff!important;
+    color: #4772fe!important;
+    border: none!important;
+    padding-left: 20px;
+}
