@@ -6,9 +6,9 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <form action="" class="form-inline">
+        <form #f="ngForm" (ngSubmit)='onSubmit(f)' class="form-inline">
             <div class="col-md-10 form-group">
-                <input type="text" placeholder="Add New Categories here" name="categoryName" class="form-control-plaintext drop-shadow">
+                <input type="text" placeholder="Add New Categories here" name="categoryName" class="form-control-plaintext drop-shadow" ngModel>
             </div>
             <button type="submit" class="btn btn-primary col-md-2 btn-todo btn-block drop-shadow">ADD</button>
 
@@ -19,15 +19,22 @@
 <div class="row categories-list">
     <div class="col-md-3">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body drop-shadow">
                 <div class="clearfix">
                     <div class="float-left">
                         <div class="badge badge-primary">CATEGORY</div>
                     </div>
                     <div class="float-right cat-tools">
-                        <!--                         <small><i class="fa fa-pencil-alt text-succuess"></i></small>
- -->
+                        <small><i class="fas fa-pencil text-success"></i></small>
+                        <small><i class="fas fa-trash text-danger"></i></small>
+
                     </div>
+                </div>
+                <div class="todo-content">
+                    <h3>
+                        <small class="text-secondary"> Lorem ipsum dolor sit amet consectetur adipisiciditate quisquam temporibus animi.</small>
+                    </h3>
+                    <span class="badge badge-danger">3 -Todos</span>
                 </div>
             </div>
         </div>
